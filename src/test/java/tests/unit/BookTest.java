@@ -23,9 +23,10 @@ public class BookTest {
 		List<Book> fictionBooks = new ArrayList<>();
 		Book book1 = new Book("abc", "Fiction");
 		Book book2 = new Book("xyx", "Fiction");
+		Book book3 = new Book("pqr", "Fiction");
 		fictionBooks.add(book1);
 		fictionBooks.add(book2);
-		
+		fictionBooks.add(book3);
 		//Stub
 		when(db.getFictionBooks()).thenReturn(fictionBooks);
 		List<Book> actlist = lib.getBooksByCetegory("Fiction");
